@@ -1,7 +1,7 @@
 # GenFeatureTree w/ Cmdr
 This just adds Cmdr functionality.
 Changes: 
-- Forces all files under cmdr into their respective folder, no Server/Client seperation
+- Forces all files under cmdr into the server under their respective folder, no Server/Client seperation
 - Added Hook, Type, and Command directory.
 
 ## How to use:
