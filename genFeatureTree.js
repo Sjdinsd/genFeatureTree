@@ -128,7 +128,7 @@ walk(BASE_PATH, (filepath) => {
     if (initClaimedFolders.has(fullFolderKey)) return;
 
     // force commands to server for cmdr
-    let current = folder.includes("Cmdr") ? serverRoot : sharedRoot;
+    let current = folder.includes("Cmdr") ? serverRoot : root;
     for (const part of folder) {
         if (!current[part]) current[part] = { $className: "Folder" };
         current = current[part];
@@ -138,4 +138,4 @@ walk(BASE_PATH, (filepath) => {
 });
 
 fs.writeFileSync("default.project.json", JSON.stringify(tree, null, 2));
-// console.log("✅ default.project.json generated.");
+console.log("✅ default.project.json generated.");
